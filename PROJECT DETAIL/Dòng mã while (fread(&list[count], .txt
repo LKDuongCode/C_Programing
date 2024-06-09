@@ -1,0 +1,15 @@
+Dòng mã while (fread(&list[count], sizeof(Test), 1, f) == 1) có nghĩa là vòng lặp sẽ tiếp tục thực thi cho đến khi hàm fread() trả về giá trị bằng 1. Điều này đảm bảo rằng dữ liệu được đọc từ tập tin thành công.
+
+Trong trường hợp này, hàm fread() được sử dụng để đọc sizeof(Test) byte từ tập tin và lưu trữ vào địa chỉ &list[count]. Nếu hàm fread() trả về 1, có nghĩa là nó đã đọc thành công 1 cấu trúc Test từ tập tin và count được tăng lên để theo dõi số lượng cấu trúc đã được đọc.
+
+Khi không còn cấu trúc nào có thể đọc được từ tập tin, fread() sẽ trả về một giá trị khác 1, và vòng lặp sẽ kết thúc.
+
+Vì vậy, dòng mã while (fread(&list[count], sizeof(Test), 1, f) == 1) được sử dụng để đảm bảo rằng việc đọc dữ liệu từ tập tin được thực hiện thành công và count sẽ chỉ định số lượng cấu trúc Test đã được đọc từ tập tin.
+===================================================================================================
+Biểu thức while (fread(&list[count], sizeof(Test), 1, f) == 1) có ý nghĩa là vòng lặp sẽ tiếp tục chạy khi fread() trả về giá trị bằng 1. Điều này đảm bảo rằng dữ liệu được đọc từ tập tin thành công.
+
+Trong mã này, hàm fread() được sử dụng để đọc sizeof(Test) byte từ tập tin và lưu trữ vào địa chỉ &list[count]. Nếu hàm fread() trả về giá trị bằng 1, có nghĩa là nó đã thành công đọc 1 cấu trúc Test từ tập tin và count được tăng lên để theo dõi số lượng cấu trúc đã đọc.
+
+Khi không còn cấu trúc nào có thể đọc từ tập tin, fread() sẽ trả về một giá trị khác 1, và vòng lặp sẽ kết thúc.
+
+Vì vậy, dòng mã while (fread(&list[count], sizeof(Test), 1, f) == 1) được sử dụng để đảm bảo rằng việc đọc dữ liệu từ tập tin được thực hiện thành công và count sẽ chỉ định số lượng cấu trúc Test đã được đọc từ tập tin.
